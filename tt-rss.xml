@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tt-rss</Name>
+  <Repository>registry.gitlab.com/lunik1/docker-tt-rss</Repository>
+  <Registry>https://hub.docker.com/r/lunik1/tt-rss/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://gitlab.com/lunik1/docker-tt-rss/-/issues</Support>
+  <Project>https://tt-rss.org/</Project>
+  <Overview>1-Tiny Tiny RSS is a free and open source web-based news feed (RSS/Atom) reader and aggregator.
+<strong>The default username and password after initial configuration is admin/password</strong></Overview>
+  <Category>Productivity: Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ben-nl/docker-templates/master/tt-rss.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ben-nl/docker-templates/master/images/ttrss-512.png</Icon>
+  <Description>2-Tiny Tiny RSS is a free and open source web-based news feed (RSS/Atom) reader and aggregator.
+<strong>The default username and password after initial configuration is admin/password</strong></Description>
+  <Network>bridge</Network>
+  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/tt-rss" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="TTRSS_DB_TYPE" Target="TTRSS_DB_TYPE" Default="mysql" Mode="" Description="TTRSS_DB_TYPE" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="TTRSS_DB_HOST" Target="TTRSS_DB_HOST" Default="192.168.1.1" Mode="" Description="Database IP (Change it)" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="TTRSS_DB_USER" Target="TTRSS_DB_USER" Default="root" Mode="" Description="TTRSS_DB_USER" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="TTRSS_DB_NAME" Target="TTRSS_DB_NAME" Default="tt-rss" Mode="" Description="TTRSS_DB_NAME" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="TTRSS_DB_PASS" Target="TTRSS_DB_PASS" Default="dbpassword" Mode="" Description="TTRSS_DB_PASS" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="TTRSS_DB_PORT" Target="TTRSS_DB_PORT" Default="3306" Mode="" Description="TTRSS_DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="TTRSS_SELF_URL_PATH" Target="TTRSS_SELF_URL_PATH" Default="http://192.168.1.1:8000/" Mode="" Description="TTRSS_SELF_URL_PATH" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">
+</Container>
