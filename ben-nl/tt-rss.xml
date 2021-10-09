@@ -10,7 +10,7 @@
   <Project>https://tt-rss.org/</Project>
   <Overview>1-Tiny Tiny RSS is a free and open source web-based news feed (RSS/Atom) reader and aggregator.
 <strong>The default username and password after initial configuration is admin/password</strong></Overview>
-  <Category>Productivity: Other:</Category>
+  <Category>Productivity: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ben-nl/docker-templates/master/tt-rss.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ben-nl/docker-templates/master/images/ttrss-512.png</Icon>
